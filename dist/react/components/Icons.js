@@ -1,0 +1,36 @@
+"use client";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+function Svg(props) {
+    return (_jsx("svg", { width: 16, height: 16, viewBox: "0 0 16 16", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", ...props }));
+}
+export const UndoIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M4 4v4h4" }), _jsx("path", { d: "M4.5 8A5 5 0 1 1 6 12.5" })] }));
+export const RedoIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M12 4v4H8" }), _jsx("path", { d: "M11.5 8A5 5 0 1 0 10 12.5" })] }));
+export const LinkIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M6.5 9.5L9.5 6.5" }), _jsx("path", { d: "M7 4.5l1-1a2.5 2.5 0 013.5 3.5l-1 1" }), _jsx("path", { d: "M9 11.5l-1 1a2.5 2.5 0 01-3.5-3.5l1-1" })] }));
+export const ImageIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "3", width: "12", height: "10", rx: "1" }), _jsx("circle", { cx: "6", cy: "7", r: "1" }), _jsx("path", { d: "M3 12l4-4 3 3 3-4 1 1" })] }));
+export const UnorderedListIcon = () => (_jsxs(Svg, { children: [_jsx("circle", { cx: "3", cy: "4", r: "0.75", fill: "currentColor", stroke: "none" }), _jsx("circle", { cx: "3", cy: "8", r: "0.75", fill: "currentColor", stroke: "none" }), _jsx("circle", { cx: "3", cy: "12", r: "0.75", fill: "currentColor", stroke: "none" }), _jsx("path", { d: "M6 4h8M6 8h8M6 12h8" })] }));
+export const OrderedListIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M6 4h8M6 8h8M6 12h8" }), _jsx("text", { x: "1.5", y: "5.2", fontSize: "4.5", fill: "currentColor", stroke: "none", children: "1" }), _jsx("text", { x: "1.5", y: "9.2", fontSize: "4.5", fill: "currentColor", stroke: "none", children: "2" }), _jsx("text", { x: "1.5", y: "13.2", fontSize: "4.5", fill: "currentColor", stroke: "none", children: "3" })] }));
+export const ChecklistIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "3", width: "4", height: "4", rx: "0.5" }), _jsx("path", { d: "M2.8 5l0.8 0.8 1.6-1.8" }), _jsx("path", { d: "M8 5h6" }), _jsx("rect", { x: "2", y: "9", width: "4", height: "4", rx: "0.5" }), _jsx("path", { d: "M8 11h6" })] }));
+export const QuoteIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M4 5.5c-1.2 0-2 1-2 2.2 0 1.2.8 2 1.8 2 .2 1.3-.6 2.3-1.6 2.8" }), _jsx("path", { d: "M10.5 5.5c-1.2 0-2 1-2 2.2 0 1.2.8 2 1.8 2 .2 1.3-.6 2.3-1.6 2.8" })] }));
+export const TableIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "3", width: "12", height: "10", rx: "1" }), _jsx("path", { d: "M2 6.5h12M2 10h12M6.5 3v10M10.5 3v10" })] }));
+export const HrIcon = () => (_jsx(Svg, { children: _jsx("path", { d: "M2 8h12" }) }));
+export const CodeIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M6 4L2 8l4 4" }), _jsx("path", { d: "M10 4l4 4-4 4" })] }));
+export const CodeGroupIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "4.5", width: "12", height: "9", rx: "1" }), _jsx("path", { d: "M2 4.5h5M2 7h12" })] }));
+export const SubscriptIcon = () => (_jsxs(Svg, { children: [_jsx("text", { x: "1.2", y: "12", fontSize: "9", fontWeight: "600", fill: "currentColor", stroke: "none", children: "X" }), _jsx("text", { x: "9.5", y: "14.5", fontSize: "6", fontWeight: "600", fill: "currentColor", stroke: "none", children: "2" })] }));
+export const SuperscriptIcon = () => (_jsxs(Svg, { children: [_jsx("text", { x: "1.2", y: "12", fontSize: "9", fontWeight: "600", fill: "currentColor", stroke: "none", children: "X" }), _jsx("text", { x: "9.5", y: "6", fontSize: "6", fontWeight: "600", fill: "currentColor", stroke: "none", children: "2" })] }));
+export const DetailsIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "3", width: "12", height: "10", rx: "1" }), _jsx("path", { d: "M2 6.5h12" }), _jsx("path", { d: "M6.8 4.5l1.2 1.3 1.2-1.3" })] }));
+export const AlertIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M8 2l6.5 11.5h-13L8 2z" }), _jsx("path", { d: "M8 6.5v3" }), _jsx("circle", { cx: "8", cy: "11.5", r: "0.6", fill: "currentColor", stroke: "none" })] }));
+export const FullscreenEnterIcon = () => (_jsx(Svg, { children: _jsx("path", { d: "M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4" }) }));
+export const FullscreenExitIcon = () => (_jsx(Svg, { children: _jsx("path", { d: "M6 2v4H2M10 2v4h4M6 14v-4H2M10 14v-4h4" }) }));
+export const EditModeIcon = () => (_jsx(Svg, { children: _jsx("path", { d: "M3 13l1-3 7-7 2 2-7 7-3 1z" }) }));
+export const SplitModeIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "3", width: "12", height: "10", rx: "1" }), _jsx("path", { d: "M8 3v10" })] }));
+export const PreviewModeIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M1.5 8S4 3.5 8 3.5 14.5 8 14.5 8 12 12.5 8 12.5 1.5 8 1.5 8z" }), _jsx("circle", { cx: "8", cy: "8", r: "1.6" })] }));
+export const ChevronDownIcon = () => (_jsx(Svg, { width: 10, height: 10, viewBox: "0 0 16 16", children: _jsx("path", { d: "M3 6l5 5 5-5" }) }));
+export const CopyIconSmall = () => (_jsxs(Svg, { width: 13, height: 13, children: [_jsx("rect", { x: "5", y: "5", width: "8", height: "8", rx: "1" }), _jsx("rect", { x: "3", y: "3", width: "8", height: "8", rx: "1" })] }));
+export const CheckIconSmall = () => (_jsx(Svg, { width: 13, height: 13, children: _jsx("path", { d: "M3 8l3.2 3.2L13 4" }) }));
+export const SunIcon = () => (_jsxs(Svg, { children: [_jsx("circle", { cx: "8", cy: "8", r: "3" }), _jsx("path", { d: "M8 1.5v1.5M8 13v1.5M2.6 2.6l1 1M12.4 12.4l1 1M1.5 8h1.5M13 8h1.5M2.6 13.4l1-1M12.4 3.6l1-1" })] }));
+export const MoonIcon = () => (_jsx(Svg, { children: _jsx("path", { d: "M13.5 9.5A5.8 5.8 0 116.5 2.5a4.6 4.6 0 007 7z" }) }));
+export const ResetIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M3.5 5.2A5.5 5.5 0 0113.2 8" }), _jsx("path", { d: "M10 2.2l3.2 1.6-1 3.4" }), _jsx("path", { d: "M12.5 10.8A5.5 5.5 0 012.8 8" }), _jsx("path", { d: "M6 13.8l-3.2-1.6 1-3.4" })] }));
+export const HtmlViewIcon = () => (_jsxs(Svg, { children: [_jsx("rect", { x: "2", y: "2.5", width: "12", height: "11", rx: "1" }), _jsx("path", { d: "M5.5 6.5L4 8l1.5 1.5M10.5 6.5L12 8l-1.5 1.5" })] }));
+export const DownloadIcon = () => (_jsxs(Svg, { children: [_jsx("path", { d: "M8 2v7.5" }), _jsx("path", { d: "M4.8 6.8L8 10l3.2-3.2" }), _jsx("path", { d: "M3 13h10" })] }));
+export const HelpIcon = () => (_jsxs(Svg, { children: [_jsx("circle", { cx: "8", cy: "8", r: "6.2" }), _jsx("text", { x: "8", y: "10.8", fontSize: "7.5", fontWeight: "700", fill: "currentColor", stroke: "none", textAnchor: "middle", children: "?" })] }));
+export const HeadingIcon = () => (_jsx(Svg, { children: _jsx("text", { x: "1.5", y: "12", fontSize: "10", fontWeight: "700", fill: "currentColor", stroke: "none", children: "H" }) }));

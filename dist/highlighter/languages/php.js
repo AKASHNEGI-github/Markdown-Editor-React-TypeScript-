@@ -1,0 +1,21 @@
+import { buildRules, kwSet } from "../engine.js";
+const keywords = kwSet([
+    "function", "return", "if", "else", "elseif", "for", "foreach", "as", "while", "do",
+    "switch", "case", "default", "break", "continue", "class", "extends", "implements",
+    "new", "public", "private", "protected", "static", "final", "abstract", "try",
+    "catch", "finally", "throw", "namespace", "use", "echo", "print", "require",
+    "require_once", "include", "include_once", "null", "array", "interface", "trait",
+]);
+const booleans = kwSet(["true", "false"]);
+export const php = {
+    name: "PHP",
+    aliases: ["php"],
+    rules: buildRules({
+        lineComment: ["//", "#"],
+        blockComment: [["/*", "*/"]],
+        strings: [/"(?:\\.|[^"\\\n])*"/y, /'(?:\\.|[^'\\\n])*'/y],
+        keywords,
+        booleans,
+        extraRules: [{ type: "variable", re: /\$[A-Za-z_][A-Za-zA-Z0-9_]*/y }],
+    }),
+};

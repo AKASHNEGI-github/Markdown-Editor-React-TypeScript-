@@ -1,0 +1,22 @@
+import { buildRules, kwSet } from "../engine.js";
+const keywords = kwSet([
+    "using", "namespace", "class", "struct", "interface", "public", "private", "protected",
+    "internal", "static", "void", "return", "if", "else", "for", "foreach", "in", "while",
+    "do", "switch", "case", "default", "break", "continue", "new", "this", "base", "try",
+    "catch", "finally", "throw", "async", "await", "var", "readonly", "const", "override",
+    "virtual", "abstract", "sealed", "get", "set", "enum", "null", "typeof", "is", "as",
+]);
+const types = kwSet(["int", "string", "bool", "double", "float", "decimal", "long", "short", "byte", "char", "object", "var"]);
+const booleans = kwSet(["true", "false"]);
+export const csharp = {
+    name: "C#",
+    aliases: ["cs", "csharp", "c#"],
+    rules: buildRules({
+        lineComment: ["//"],
+        blockComment: [["/*", "*/"]],
+        strings: [/"(?:\\.|[^"\\\n])*"/y, /'(?:\\.|[^'\\\n])*'/y],
+        keywords,
+        types,
+        booleans,
+    }),
+};

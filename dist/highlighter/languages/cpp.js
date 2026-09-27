@@ -1,0 +1,26 @@
+import { buildRules, kwSet } from "../engine.js";
+const keywords = kwSet([
+    "auto", "break", "case", "char", "const", "continue", "default", "do", "double",
+    "else", "enum", "extern", "float", "for", "goto", "if", "int", "long", "register",
+    "return", "short", "signed", "sizeof", "static", "struct", "switch", "typedef",
+    "union", "unsigned", "void", "volatile", "while", "class", "namespace", "template",
+    "typename", "public", "private", "protected", "new", "delete", "using", "virtual",
+    "override", "friend", "operator", "try", "catch", "throw", "this", "nullptr",
+    "constexpr", "explicit", "inline", "mutable", "noexcept", "static_cast",
+    "dynamic_cast", "const_cast", "reinterpret_cast",
+]);
+const types = kwSet(["bool", "size_t", "string", "vector", "map", "set", "auto"]);
+const booleans = kwSet(["true", "false"]);
+export const cpp = {
+    name: "C++",
+    aliases: ["cpp", "c++", "cxx", "hpp"],
+    rules: buildRules({
+        lineComment: ["//"],
+        blockComment: [["/*", "*/"]],
+        strings: [/"(?:\\.|[^"\\\n])*"/y, /'(?:\\.|[^'\\\n])*'/y],
+        keywords,
+        types,
+        booleans,
+        extraRules: [{ type: "meta", re: /#\s*[a-zA-Z]+/y }],
+    }),
+};

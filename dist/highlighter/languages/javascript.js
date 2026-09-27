@@ -1,0 +1,24 @@
+import { buildRules, kwSet } from "../engine.js";
+const keywords = kwSet([
+    "const", "let", "var", "function", "return", "if", "else", "for", "while", "do",
+    "switch", "case", "default", "break", "continue", "class", "extends", "new", "this",
+    "typeof", "instanceof", "in", "of", "try", "catch", "finally", "throw", "async",
+    "await", "yield", "import", "export", "from", "as", "void", "delete", "static",
+    "get", "set", "super", "null", "undefined",
+]);
+const booleans = kwSet(["true", "false"]);
+export const javascript = {
+    name: "JavaScript",
+    aliases: ["js", "jsx", "mjs", "cjs", "javascript"],
+    rules: buildRules({
+        lineComment: ["//"],
+        blockComment: [["/*", "*/"]],
+        strings: [
+            /"(?:\\.|[^"\\\n])*"/y,
+            /'(?:\\.|[^'\\\n])*'/y,
+            /`(?:\\.|[^`\\])*`/y,
+        ],
+        keywords,
+        booleans,
+    }),
+};

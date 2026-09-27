@@ -1,0 +1,23 @@
+import { buildRules, kwSet } from "../engine.js";
+const keywords = kwSet([
+    "def", "class", "return", "if", "elif", "else", "for", "while", "break", "continue",
+    "pass", "import", "from", "as", "try", "except", "finally", "raise", "with",
+    "lambda", "yield", "global", "nonlocal", "assert", "del", "in", "is", "and", "or",
+    "not", "async", "await", "None", "self",
+]);
+const booleans = kwSet(["True", "False"]);
+export const python = {
+    name: "Python",
+    aliases: ["py", "python", "py3"],
+    rules: buildRules({
+        lineComment: ["#"],
+        strings: [
+            /"""[\s\S]*?(?:"""|$)/y,
+            /'''[\s\S]*?(?:'''|$)/y,
+            /f?"(?:\\.|[^"\\\n])*"/y,
+            /f?'(?:\\.|[^'\\\n])*'/y,
+        ],
+        keywords,
+        booleans,
+    }),
+};
